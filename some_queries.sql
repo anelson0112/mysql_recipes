@@ -6,7 +6,7 @@ JOIN Ingredient i on i.id = ri.ingredient_id
 LEFT OUTER JOIN Measure mu on mu.id = measure_id;
 
 /*get a list of recipes */ 
-SELECT * from Recipe
+Select * from Recipe
 
 /*
 get a specific ingredient 
@@ -17,4 +17,4 @@ SELECT *
 From Recipe r
 JOIN RecipeIngredient ri on ri.recipe_id = r.id  
 JOIN Ingredient i on i.id = ri.ingredient_id 
-WHERE i.name = ???
+WHERE i.name = butter;
